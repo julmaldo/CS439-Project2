@@ -16,14 +16,18 @@ assignment discription:
   **
   * @brief Initializer, guaranteed to be called before any memory request
   *
+  
   void my_malloc_init();
+  
   **
   * @brief Allocate a block of memory of size size.
   * @param [in] size the requested size of the block.
   * @retval the pointer to the block or a negative value
   * if the request cannot be fulfilled.
   *
+  
   void *my_malloc(size_t size);
+  
   /**
   * @brief Free a previously allocated block so that it
   * becomes available again.
@@ -31,19 +35,24 @@ assignment discription:
   * blocks.
   * @param [in] ptr the pointer to the block.
   */
+  
   void my_free(void *ptr);
+  
   /**
   * @brief Dump a graphical representation of the state of the
   * mymalloc heap to the stream.
   * @param [in] stream the stream to write to.
   */
+  
   void my_dump_mem(FILE *stream);
+  
   /**
   * @brief Translate an absolute pointer address to the relative
   * address (in MiB) within the mymalloc heap.
   * @param [in] ptr the address to translate.
   * @retval The translated address in MiB.
   */
+  
   uint64_t my_address(void *ptr);
   
   When my malloc init() is called, your memory allocator acquires a large chunk of memory from
