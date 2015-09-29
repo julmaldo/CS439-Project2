@@ -13,16 +13,16 @@ assignment discription:
   
   The API for mymalloc is the following:
 
-  /**
+  **
   * @brief Initializer, guaranteed to be called before any memory request
-  */
+  *
   void my_malloc_init();
-  /**
+  **
   * @brief Allocate a block of memory of size size.
   * @param [in] size the requested size of the block.
   * @retval the pointer to the block or a negative value
   * if the request cannot be fulfilled.
-  */
+  *
   void *my_malloc(size_t size);
   /**
   * @brief Free a previously allocated block so that it
@@ -65,6 +65,6 @@ assignment discription:
 
 
 2 Test Your Memory Allocator
-  The archive also contains a main.c file which uses mymalloc and can be used for testing. Using the
-  provided make file, you can build a prog executable. Note that with the current mymalloc library
-  the first assertion will already fail.
+    The archive also contains a main.c file which uses mymalloc and can be used for testing. Using the
+    provided make file, you can build a prog executable. Note that with the current mymalloc library
+    the first assertion will already fail.
